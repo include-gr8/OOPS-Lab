@@ -7,6 +7,7 @@ class SavingsAccount{
         static float annualInterestRate;
         static void modifyInterestRate(float InterestRate){
             annualInterestRate=InterestRate;
+            cout<<"Current Interest Rate = "<<InterestRate<<endl;
         }
         void calculateMonthlyInterest(){
             savingsBalance+=(savingsBalance*annualInterestRate)/12;
